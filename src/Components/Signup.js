@@ -12,7 +12,7 @@ const Signup = () => {
   const navigate = useNavigate()
 
   function handlePost() {
-    axios.post("http://localhost:5000/ecommerce/signup", { name, email, password })
+    axios.post("https://e-commerce-server-mrdl.onrender.com/ecommerce/signup", { name, email, password })
       .then(() => {
         alert("Data posted successfully")
         setEmail('')
